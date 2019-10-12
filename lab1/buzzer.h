@@ -3,7 +3,7 @@
 #include "melody.h"
 #include "picthes.h"
 
-#define BUZZER_NOTE_DURATION 100
+#define BUZZER_NOTE_DURATION 125
 
 class Buzzer
 {
