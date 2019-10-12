@@ -55,7 +55,7 @@ public:
       for(int i = 0; i < countBuzzer ;i++)
           currentMeasure[i] = 0; 
   }
-  void setMelody(Measure _measures[], int _numBuzzer){
+  void setMelodyForBuzzerNum(Measure _measures[], int _numBuzzer){
       measures[_numBuzzer] = _measures;
   }
   void resetMelody(){

@@ -16,7 +16,7 @@ Buzzer buzzers[2] = {
 
 void setup() {
     Melody Avengers = Melody(2, 25);
-    Avengers.setMelody(new Measure[25]{
+    Avengers.setMelodyForBuzzerNum(new Measure[25]{
         Measure(new int[6]{NOTE_D4, NOTE_SILENCE, NOTE_D4, NOTE_D4, NOTE_SILENCE, NOTE_D4}, new double[6]{4, 2, 2, 4, 2, 2}, 6),
         Measure(new int[6]{NOTE_DS4, NOTE_SILENCE, NOTE_DS4, NOTE_E4, NOTE_SILENCE, NOTE_E4}, new double[6]{4, 2, 2, 4, 2, 2}, 6),
         Measure(new int[6]{NOTE_F4, NOTE_SILENCE, NOTE_F4, NOTE_E4, NOTE_SILENCE, NOTE_E4}, new double[6]{4, 2, 2, 4, 2, 2}, 6),
@@ -43,7 +43,7 @@ void setup() {
         Measure(new int[4]{NOTE_D5, NOTE_C5, NOTE_AS4, NOTE_A4}, new double[4]{4, 4, 4, 4}, 4),
         Measure(new int[1]{NOTE_A4}, new double[1]{16}, 1)
     }, 0);
-    Avengers.setMelody(new Measure[25]{
+    Avengers.setMelodyForBuzzerNum(new Measure[25]{
         Measure(new int[2]{NOTE_F2, NOTE_SILENCE}, new double[2]{4, 12}, 2),
         Measure(new int[1]{NOTE_SILENCE}, new double[1]{16}, 1),
         Measure(new int[1]{NOTE_SILENCE}, new double[1]{16}, 1),
@@ -74,7 +74,7 @@ void setup() {
     buzzers[1].setMelody(Avengers, 0);
 
     Melody Melody2 = Melody(2, 9);
-    Melody2.setMelody(new Measure[9]{
+    Melody2.setMelodyForBuzzerNum(new Measure[9]{
         Measure(new int[1]{NOTE_D4}, new double[1]{4}, 1),
         Measure(new int[5]{NOTE_G4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_FS4}, new double[5]{4, 2, 2, 2 ,2}, 5),
         Measure(new int[3]{NOTE_E4, NOTE_C4, NOTE_E4}, new double[3]{4, 4, 4}, 3),
@@ -85,7 +85,7 @@ void setup() {
         Measure(new int[3]{NOTE_E4, NOTE_A4, NOTE_FS4}, new double[3]{4, 4, 4}, 3),
         Measure(new int[1]{NOTE_G4}, new double[1]{8}, 1)
     }, 0);
-    Melody2.setMelody(new Measure[9]{
+    Melody2.setMelodyForBuzzerNum(new Measure[9]{
         Measure(new int[1]{NOTE_SILENCE}, new double[1]{4}, 1),
         Measure(new int[1]{NOTE_G2}, new double[1]{12}, 1),
         Measure(new int[1]{NOTE_C2}, new double[1]{12}, 1),
