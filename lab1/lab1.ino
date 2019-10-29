@@ -152,7 +152,7 @@ void setup() {
       Measure(new int[11]{NOTE_D2, NOTE_D3, NOTE_D2, NOTE_D3, NOTE_D2, NOTE_D2, NOTE_D3, NOTE_D2, NOTE_D2, NOTE_D2, NOTE_D3}, new double[11]{2, 2, 2, 3, 2, 1 ,1 ,1, 1, 1, 2}, 11)
     }, 1);
     buzzers[0].setMelody(Megalovania, 2);
-    buzzers[1].setMelody(Melody2, 2);
+    buzzers[1].setMelody(Megalovania, 2);
 }
 
 void loop() {
